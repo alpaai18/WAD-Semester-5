@@ -1,0 +1,10 @@
+body{
+    background-color: lightblue;
+    background-image: url(background.jfif);
+    background-repeat: repeat;
+    background-position: center;
+}
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blue;
+}
