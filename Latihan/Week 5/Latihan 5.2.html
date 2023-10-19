@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <center><head>
+        <title>AKN Bojonegoro</title>
+    </head>
+
+    <body>
+        <h1>Perubahan gambar di javascript</h1>
+        <p>Klik buat ubah gambar</p>
+        <img id = "gambarSaya" onclick="ubahgambar()" src = "sip.jpg" width="350" height="450">
+        <script>
+            function ubahgambar() {
+                var gambar = document.getElementById('gambarSaya') ;
+                if (gambar.src.match("sikasyep")) {
+                    gambar.src = "sip.jpg" ;
+                } else {
+                    gambar.src = "sikasyep.jpeg";
+                }
+            }
+        </script>
+    </body>
+</html>

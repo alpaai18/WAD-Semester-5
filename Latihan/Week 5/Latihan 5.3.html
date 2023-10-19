@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <center><head>
+        <title>AKN Bojonegoro</title>
+    </head>
+
+    <body>
+        <h1>What Can Javascript Do?</h1>
+        <p id = "elemen1">Javascript bisa ubah style dari elemen HTML</p>
+        <script>
+            function ubahElemen() {
+                var x = document.getElementById('elemen1') ;
+                x.style.fontSize = "25 px" ;
+                x.style.color = "red" ;
+            }
+        </script>
+
+        <button type="button" onclick="ubahElemen()">Tekan Aku!</button>
+    </body>
+</html>
