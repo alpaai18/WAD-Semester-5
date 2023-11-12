@@ -1,15 +1,19 @@
 <?php
 //koneksikan ke database
-require 'functions.php';
+require '7.2Indexnya.php';
 //ambil tabel
 $barangnya = query("SELECT * FROM onlineshopalfi");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Toko Alfi</head>
+    <head><title>Toko Alfi</title></head>
     <body>
         <h1>Etalase Produk</h1>
+
+        <a href = "7.3Tambah.php"> Tambah Barang Jualan di Etalase</a>
+        <br><br>
+        
         <table border="1" cellpadding ="10" cellspacing ="0">
             <tr>
                 <th>No. </th>
