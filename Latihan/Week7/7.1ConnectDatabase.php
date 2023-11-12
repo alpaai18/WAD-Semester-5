@@ -1,13 +1,13 @@
 <?php
 //koneksikan ke database
-$conn = mysqli_connect("localhost", "root", "", "tugas3wad");
+$conn = mysqli_connect("localhost:3306", "root", "", "tugas3wad");
 //ambil tabel
 $result = mysqli_query($conn, "SELECT * FROM onlineshopalfi");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Toko Alfi</head>
+    <head><title>Toko Alfi</title></head>
     <body>
         <h1>Etalase Produk</h1>
         <table border="1" cellpadding ="10" cellspacing ="0">
@@ -68,6 +68,7 @@ $result = mysqli_query($conn, "SELECT * FROM onlineshopalfi");
                     <a href="">DELETE</a>
                 </td>
             </tr>
+        </table>
     </body>
 </html>
     
