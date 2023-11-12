@@ -1,13 +1,13 @@
 <?php
 //koneksikan ke database
-require 'functions.php';
+require '7.2Indexnya.php';
 //ambil tabel
 $barangnya = query("SELECT * FROM onlineshopalfi");
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
-    <head><title>Toko Alfi</head>
+    <head><title>Toko Alfi</title></head>
     <body>
         <h1>Etalase Produk</h1>
         <table border="1" cellpadding ="10" cellspacing ="0">
@@ -21,9 +21,9 @@ $barangnya = query("SELECT * FROM onlineshopalfi");
                 <th>AKSI</th>
             </tr>
             <?php $i = 1; ?>
-            <?php foreach ($barangnya as $barang) ; ?>
+            <?php foreach ($barangnya as $row) ; ?>
             <tr>
-                <td>1</td>
+                <td><?= $i ?></td>
                 <td>B01</td>
                 <td><img src = "Laptop Gaming.jfif" alt = ""></td>
                 <td>Laptop Gaming</td>
@@ -35,7 +35,7 @@ $barangnya = query("SELECT * FROM onlineshopalfi");
                 </td>
             </tr>
             <tr>
-                <td>2</td>
+                <td><?= $i ?></td>
                 <td>B02</td>
                 <td><img src = "Tas Laptop.jfif" alt = ""></td>
                 <td>Tas Laptop</td>
@@ -47,7 +47,7 @@ $barangnya = query("SELECT * FROM onlineshopalfi");
                 </td>
             </tr>
             <tr>
-                <td>3</td>
+                <td><?= $i ?></td>
                 <td>B03</td>
                 <td><img src = "Mouse Gaming.jfif" alt = ""></td>
                 <td>Mouse Gaming</td>
@@ -59,7 +59,7 @@ $barangnya = query("SELECT * FROM onlineshopalfi");
                 </td>
             </tr>
             <tr>
-                <td>4</td>
+                <td><?= $i ?></td>
                 <td>B04</td>
                 <td><img src = "Keyboard Mechanical.jfif" alt = ""></td>
                 <td>Keyboard Mechanical</td>
